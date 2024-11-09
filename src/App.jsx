@@ -14,6 +14,7 @@ import Dishes from './pages/dishes/Dishes';
 import CoffeeBeans from './pages/coffee_beans/CoffeeBeans';
 import Map from './pages/map/Map';
 import History from './pages/history/History';
+import LoyalProgram from './pages/loyal-program-main/LoyalProgram';
 
 
 
@@ -42,6 +43,7 @@ function App() {
           <Route path="/coffee_beans" element={<CoffeeBeans />} />
           <Route path="/map" element={<Map />} />
           <Route path="/history" element={<History />} />
+          <Route path="/loyal-program-main" element={<LoyalProgram />} />
         </Routes>
         {/* <Basket /> */}
 

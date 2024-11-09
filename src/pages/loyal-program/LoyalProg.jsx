@@ -21,7 +21,7 @@ export default function LoyalProg() {
                 setPassword('');
 
                 // После успешного входа перенаправляем на главную страницу
-                navigate('/');  // Перенаправляем на главную страницу
+                navigate('/loyal-program-main');  // Перенаправляем на главную страницу
             })
             .catch((error) => {
                 console.log(error);
@@ -75,7 +75,6 @@ export default function LoyalProg() {
                         Для того, чтобы стать участником Программы, необходимо зарегистрироваться в «Мои Награды Старбакс»...
                     </p>
                 </div>
-                {/* Остальная часть кода */}
             </div>
         </div>
     );

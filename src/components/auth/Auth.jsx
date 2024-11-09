@@ -1,6 +1,7 @@
 import { createUserWithEmailAndPassword } from 'firebase/auth'
 import React, { useState } from 'react'
 import { auth } from '../../Farebase';
+import { NavLink } from "react-router-dom";
 
 
 export default function Auth() {
@@ -54,7 +55,9 @@ export default function Auth() {
                     <p className=" h-14 flex items-center text-2xl">
                         У вас уже есть аккаунт в “мои награды старбакс”
                     </p>
-                    <button className="mt-5 text-sm font-bold border  border-black rounded-full py-2 px-5 hover:bg-black-200 transition ease-in duration-300">Войти</button>
+                    <NavLink to="/loyal-program">
+                        <button className="mt-5 text-sm font-bold border  border-black rounded-full py-2 px-5 hover:bg-black-200 transition ease-in duration-300">Войти</button>
+                    </NavLink>
                 </div>
                 {error ? <p style={{ color: "red" }}>{error}</p> : ""}
             </form>
